@@ -12,7 +12,7 @@ import os
 # Inizializzazione costanti e vettori delle keyword
 COSTANTE_S = "https://"
 COSTANTE_NON_S = "http://"
-keywords = ["Stampa 3D", "3D printing", "manifattura additiva", "additive manufacturing", "produzione rapida", "rapid manufacturing"]
+keywords = ["Inserisci le keyword da verificare"]
 
 # Funzione per uniformare gli URL rimuovendo http e https
 def uniform_url(url):
@@ -98,9 +98,9 @@ def analyze_page(driver, url, keywords, base_url):
         return [(url, f"Errore: {e}")], set()
 
 # Configurazioni iniziali
-service = Service(r"C:\Users\Diofe\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe")
+service = Service(r"percorso fino a chromedriver.exe")
 chrome_options = Options()
-chrome_options.binary_location = r"C:\Users\Diofe\Downloads\chrome-win64\chrome-win64\chrome.exe"
+chrome_options.binary_location = r"percorso fino a chrome.exe"
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--disable-gpu")
